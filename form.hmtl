@@ -1,0 +1,19 @@
+<form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
+    <input type="hidden" name="action" value="process_form">
+    <label for="custoDireto">Custo Direto:</label>
+    <input type="number" id="custoDireto" name="custoDireto" step="0.01" required><br>
+
+    <label for="horasTrabalho">Horas de Trabalho:</label>
+    <input type="number" id="horasTrabalho" name="horasTrabalho" step="0.01" required><br>
+
+    <label for="custoHora">Custo por Hora:</label>
+    <input type="number" id="custoHora" name="custoHora" step="0.01" required><br>
+
+    <label for="margemLucro">Margem de Lucro (%):</label>
+    <input type="number" id="margemLucro" name="margemLucro" step="0.01" required><br>
+
+    <label for="taxaImposto">Taxa de Imposto (%):</label>
+    <input type="number" id="taxaImposto" name="taxaImposto" step="0.01" required><br>
+
+    <input type="submit" value="Calcular Orçamento">
+</form>
